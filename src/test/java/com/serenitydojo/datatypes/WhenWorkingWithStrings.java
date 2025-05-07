@@ -14,6 +14,8 @@ public class WhenWorkingWithStrings {
         String lowerCaseTitle = "";
         // TODO: Convert the book title to lower case and assign it to the lowerCaseTitle variable
 
+        lowerCaseTitle = bookTitle.toLowerCase();
+
         assertThat(lowerCaseTitle, equalTo("the cat in the hat"));
 
     }
@@ -25,6 +27,8 @@ public class WhenWorkingWithStrings {
         String upperCaseTitle = "";
         // TODO: Convert the book title to upper case and assign it to the lowerCaseTitle variable
 
+        upperCaseTitle = bookTitle.toUpperCase();
+
         assertThat(upperCaseTitle, equalTo("THE CAT IN THE HAT"));
     }
 
@@ -34,6 +38,8 @@ public class WhenWorkingWithStrings {
 
         String trimmedTitle = "";
         // TODO: Trim the spaces before and after the title text
+
+        trimmedTitle = bookTitle.trim();
 
         assertThat(trimmedTitle, equalTo("The Cat In The Hat"));
     }
@@ -45,6 +51,8 @@ public class WhenWorkingWithStrings {
         int length = 0;
         // TODO: Find the number of characters in the string
 
+        length = bookTitle.length();
+
         assertThat(length, equalTo(18));
     }
 
@@ -54,6 +62,8 @@ public class WhenWorkingWithStrings {
 
         String updatedTitle = "";
         // TODO: Replace the word "Cat" with "Dog
+
+        updatedTitle = bookTitle.replace("Cat", "Dog");
 
         assertThat(updatedTitle, equalTo("The Dog In The Hat"));
     }

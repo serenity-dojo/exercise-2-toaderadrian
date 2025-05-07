@@ -2,6 +2,7 @@ package com.serenitydojo.datatypes;
 
 import org.junit.Test;
 
+import static java.lang.Math.round;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -18,6 +19,8 @@ public class WhenWorkingWithFloatingPointNumbers {
 
         // TODO: Use a floating point calculation to calculate the farenheit equivalent of the celcius value.
 
+        farenheit = (double) 9 / 5 * celcius + 32;
+
         assertThat(farenheit, equalTo(80.6));
     }
 
@@ -31,6 +34,8 @@ public class WhenWorkingWithFloatingPointNumbers {
         double weightInPounds = 0;
 
         // TODO: Use a floating point calculation to calculate the correct weight in pounds
+
+        weightInPounds = weightInKilograms * 2.20462;
 
         assertThat(weightInPounds, equalTo(110.231));
 
